@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Feedback - Estudo GD 2024</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            max-height: 40px;
+            /* Ajuste conforme necessário */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        /* Adiciona estilos específicos para a pergunta de feedback */
+        .feedback-container {
+            margin-top: 40px;
+        }
+        .feedback-question {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .rating-buttons-wrapper {
+            width: 100%;
+            text-align: center;
+        }
+        .rating-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .rating-button {
+            width: 30px;
+            height: 30px;
+            color: #FFFFFF;
+            text-align: center;
+            border-radius: 6px; /* Alterado para quadrado */
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+            line-height: 30px; /* Adicionado para centralizar os números verticalmente */
+        }
+        .button-0 { background: #FF2E00; }
+        .button-1 { background: #FF5C00; }
+        .button-2 { background: #FF8A00; }
+        .button-3 { background: #FFB800; }
+        .button-4 { background: #FFE500; }
+        .button-5 { background: #D8FF00; }
+        .button-6 { background: #AAFF00; }
+        .button-7 { background: #7DFF00; }
+        .button-8 { background: #4FFF00; }
+        .button-9 { background: #00FF00; }
+        .button-10 { background: #00FF00; }
+        .rating-button:hover {
+            opacity: 0.8;
+        }
+        h1 {
+            color: #333333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .button {
+            display: none; /* Removi o botão "Conheça mais" */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 70px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Adicione a sua logo aqui -->
+        <img src="https://i.postimg.cc/ht15M3DM/Mapa-Mental-Atividades-Greener-1.png" alt="Logo da Empresa" class="logo">
+    </header>
+    <div class="container">
+        <h1>Greener | Pesquisa de Satisfação Estudo GD 2024!</h1>
+        <!-- Conteúdo principal permanece inalterado -->
+        <p>Olá, *|PRIMEIRO_NOME|*</p>
+        <p>Nós do time de relacionamento da Greener queremos saber com 1 pergunta, como foi a sua experiência com o nosso Estudo GD 2024. Sua resposta será registrada através do clique.</p>
+        <!-- Adicione a seção de feedback -->
+        <div class="feedback-container">
+            <p class="feedback-question">Em uma escala de 0 (nada provável) a 10 (extremamente provável), qual a probabilidade de você recomendar o Estudo GD 2024?</p>
+            <div class="rating-buttons-wrapper">
+                <div class="rating-buttons">
+                   <a href="https://greenersummit.com.br/?utm_medium=00" class="rating-button button-0">0</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=01" class="rating-button button-1">1</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=02" class="rating-button button-2">2</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=03" class="rating-button button-3">3</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=04" class="rating-button button-4">4</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=05" class="rating-button button-5">5</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=06" class="rating-button button-6">6</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=07" class="rating-button button-7">7</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=08" class="rating-button button-8">8</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=09" class="rating-button button-9">9</a>
+                    <a href="https://greenersummit.com.br/?utm_medium=10" class="rating-button button-10">10</a>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <!-- Conteúdo sobre a empresa permanece inalterado -->
+        </ul>
+        <p> Após o clique você será redirecionado para conhecer o Greener Summit 24.</p>
+        <p class="feedback-question">Obrigada por escolher a Greener! Caso queira detalhar  a sua experiência, fique à vontade para responder a este e-mail</p>
+        <footer>
+            <p>Atenciosamente,<br><strong>Time de Relacionamento</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
